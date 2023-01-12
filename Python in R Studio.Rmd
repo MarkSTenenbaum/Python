@@ -13,3 +13,10 @@ x = 10
 y = 20
 sum([x,y])
 ```
+
+## Saving the Rmd as .ipynb
+```{r}
+devtools::install_github("mkearney/rmd2jupyter")
+library(rmd2jupyter)
+rmd2jupyter("Test_file.Rmd")
+```
