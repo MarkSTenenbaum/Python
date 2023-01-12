@@ -1,0 +1,15 @@
+## Loading `reticulate` package
+```{r}
+library(reticulate)
+use_python('/Users/marktenenbaum/opt/anaconda3/bin/python')
+```
+Note: to get the above path, go to my terminal and type "where python" and it will return the path
+
+## Python code block
+```{python}
+print('hello python')
+
+x = 10
+y = 20
+sum([x,y])
+```
