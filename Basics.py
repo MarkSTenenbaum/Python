@@ -7,19 +7,62 @@ len() # like length in R e.g., number of chars in a word; number of items in lis
 
 sum([1,2,3])
 
+str(); int; float() # changing type of variable
+
+input() # function to prompt user to type something
+
+## STATEMENTS ------------------------------------------------------------------
+x%2 # gives remainder, e.g if x = 10, remainder is 0; if x%4, remainder 2
+7//3 # gives number of times 3 goes into 7, e.g., in this case 3
+2**6 # same as ^ in R. expenential power
 
 ## LOGICAL OPPERATORS ----------------------------------------------------------
 drink = "Coffee"                                # one example
 if (drink == "Coffee") or (drink == "Tea"):
     print("you drink:", drink)
-
-quit = False                                    # another example
-if quit == True:
-    print("\t block True")
+    
+x = -5                                           # another example
+if x > 0: 
+    print("positive") 
+elif x==0: 
+    print("zero")
 else:
-    print("\t block False")
-    print("\t end ")
-    print("----------")
+    print("negative")
+
+x = 3                                            # nested if statement
+if x > 0:
+    if (x%2 == 0): #
+        print("   positive even ")
+    else:
+      print('   positive odd')
+else:
+    print(" not positive")
+
+## LOOPS ----------------------------------------------------------------------
+# While loop
+while True:
+    a = int(input('type an integer')).    # asking respondnets to give dimensions for triange, and saying whether it is valid triange
+    b = int(input('type an integer'))
+    c = int(input('type an integer'))
+
+    if (a+b > c) and (c + a > b) and (b + c > a):
+        print('Valid triange')
+    else:
+        print('Not valid triange')
+        
+    play = input('Play again (y/n)')
+    if play == 'n':
+            break
+
+print('good bye.')
+
+# For loop
+count = 0 
+
+for year in range(1900, 2021, 4): 
+    if (year%4 == 0 and year%100 != 0 ) or (year%400 == 0):
+        count +=1 
+print(count)   
 
 
 ## OTHER TIPS ------------------------------------------------------------------
@@ -34,6 +77,10 @@ total = item_one + \                       # using "\" for having one statment a
         item_three
 total 
 
+for row in range (1,11): # creating 10x10 multiplication table
+    for col in range (1,11):
+        print(f'{row*col:3}', end =' ') # custom string fields
+    print() # separate rows
 
 ## KEYBORD SHORTCUTS
 # CTRL + /  comment
