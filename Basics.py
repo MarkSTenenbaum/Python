@@ -64,7 +64,7 @@ for year in range(1900, 2021, 4):
         count +=1 
 print(count)   
 
-# Big loop creating Feb calendar
+# Big loop creating Feb calendar (from my hw1 assignment in Jan 2023)
 daysOfTheWeek = 'Sun  Mon  Tue  Wed  Thu  Fri  Sat'
 
 print('          February 2023')
