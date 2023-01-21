@@ -64,6 +64,30 @@ for year in range(1900, 2021, 4):
         count +=1 
 print(count)   
 
+# Big loop creating Feb calendar
+daysOfTheWeek = 'Sun  Mon  Tue  Wed  Thu  Fri  Sat'
+
+print('          February 2023')
+print('Sun  Mon  Tue  Wed  Thu  Fri  Sat')
+
+for d in range(1, 29):
+    if (d == 1):                              # getting the "1" correct"
+        for x in range(0, len(daysOfTheWeek)):
+            if (daysOfTheWeek[x] == 'd'):
+                print(d, end = '')
+                break
+            else:
+                print(' ', end = '')
+    elif (d < 5):                            # 2-4
+        print(f'{d:5}', end = '')
+    else:                                    # one digit numbers
+        if (len(str(d)) == 1):
+            print(' ', d, end = '  ')
+        else:                               # two-digit numbers
+            print('', d, end = '  ')
+    if ((d-4) % 7) == 0:                    # move net line
+            print()
+
 
 ## OTHER TIPS ------------------------------------------------------------------
 x, y = y, x # swap the values of two variables
