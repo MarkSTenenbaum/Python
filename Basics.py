@@ -11,6 +11,16 @@ str(); int; float() # changing type of variable
 
 input() # function to prompt user to type something
 
+## MUTABILITY -----------------------------------------------------------------
+# Mutable: list, set, dictionary
+# Immutable: bool, int, float, tuple, string, frozenset
+
+## KINDS OF BRACKETS -----------------------------------------------------------
+# [] for list
+# () for tuples
+# {key:value} for dictionaries
+# {} for set
+
 ## STATEMENTS ------------------------------------------------------------------
 x%2 # gives remainder, e.g if x = 10, remainder is 0; if x%4, remainder 2
 7//3 # gives number of times 3 goes into 7, e.g., in this case 3
