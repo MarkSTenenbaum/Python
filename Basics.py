@@ -16,10 +16,10 @@ input() # function to prompt user to type something
 # Immutable: bool, int, float, tuple, string, frozenset
 
 ## KINDS OF BRACKETS -----------------------------------------------------------
-# [] for list
-# () for tuples
-# {key:value} for dictionaries
-# {} for set
+# [] for list                  - mutable, collection, sequence ordered
+# () for tuples                - collection, sequence ordered 
+# {key:value} for dictionaries - mutable, collection
+# {} for set                   - mutable, collection
 
 ## STATEMENTS ------------------------------------------------------------------
 x%2 # gives remainder, e.g if x = 10, remainder is 0; if x%4, remainder 2
