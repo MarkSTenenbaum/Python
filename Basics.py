@@ -16,10 +16,23 @@ input() # function to prompt user to type something
 # Immutable: bool, int, float, tuple, string, frozenset
 
 ## KINDS OF BRACKETS -----------------------------------------------------------
-# [] for list                  - mutable, collection, sequence ordered
-# () for tuples                - collection, sequence ordered 
+# [] for list                  - mutable, collection, sequence, ordered
+# () for tuples                -          collection, sequence, ordered 
 # {key:value} for dictionaries - mutable, collection
 # {} for set                   - mutable, collection
+
+# range                        -                      sequence, ordered
+# string                       -                      sequence
+
+# iterables: list, tuples, strings, sets, dictionaries, generators, range, files
+# non-iterables: integer, floats, nones, functions, modules, classes
+# repeated values: sets and dictionaries have no repeated values
+
+## METHODS ---------------------------------------------------------------------
+# Tuples: only two, .count and .index
+# Lists: 11 total methods. https://www.programiz.com/python-programming/methods/list
+# Dictionaries: https://www.w3schools.com/python/python_ref_dictionary.asp
+# Sets: methods centering around unions/intersections, see online
 
 ## STATEMENTS ------------------------------------------------------------------
 x%2 # gives remainder, e.g if x = 10, remainder is 0; if x%4, remainder 2
@@ -110,6 +123,11 @@ total = item_one + \                       # using "\" for having one statment a
         item_two + \
         item_three
 total 
+
+x=1; y=2; z = 3                            # multiple statments on one line using ";"
+
+y = [1, 2, 3, 4, 5, 6]                     # backward indexing
+z = y[::-1]  
 
 for row in range (1,11): # creating 10x10 multiplication table
     for col in range (1,11):
